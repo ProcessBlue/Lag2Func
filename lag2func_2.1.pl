@@ -9,7 +9,7 @@ use List::Util qw(min max);
 # Name and Version
 ################################################################################
 #
-# lag2func.pl version 2.0
+# lag2func.pl version 2.1 (under construction!! use at own risk)
 #
 ################################################################################
 # Licence: CC-BY-NC-SA
