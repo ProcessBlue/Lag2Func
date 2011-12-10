@@ -1,0 +1,69 @@
+ This is a small perl script for transforming lanhep/calchep files to increase
+ performance by substituting excessively long "Lorentz" parts in lgrng.mdl
+ files with placeholders and evaluating these parts in func.mdl instead.
+
+ The way this script works is fairly simple:
+  - Lines are read in from the lgrng.mdl file.
+  - The lines are passed to Mathematica for collation and extraction of terms
+    proportional to (real,imaginary)x(scalar,G5,G(3),p_mu,m_i).
+  - A placeholder for each of these collections of terms in the form of A01,
+    B01 etc is made, where the numeral corresponds to the original line in the
+    lgrng.mdl file.
+  - The long expression in the lgrng.mdl file is replaced by, e.g., A01+B01*i
+  - The func.mdl file is expanded to include the placeholders and the long
+    expressions they stand for.
+  - In lines proportional to only a single Lorentz factor the placeholder A##  
+    is moved into the "Factor" part of lgrng.mdl 
+
+ The reason for doing this is that objects in func.mdl are evaluated only once
+ and the ensuing simplification in the calculation of the amplitudes from
+ the vertices in lgrng.mdl speeds up the overall calculation of more complex
+ models significantly. 
+
+ The formatting required by the func.mdl file places some restrictions on this
+ operation:
+   1) The "Expression" field is truncated at around 2000 characters. This may
+      be simply a convention which could be changed in the source code of
+      calchep. In any case we work around it by simply splitting up longer
+      substitutions.
+   2) The "Name" field is exactly 7 characters long. Using the file line number
+      and upper case letters to uniquely identify a substitution means that
+      we can only accomodate
+      - 999.999 lines at lengths < ~50000 characters (26*1950) or
+      -  99.999 lines at lengths < ~1.3M characters (26^2*1950)
+ Even if it were the case that these are not simply the result of a coding
+ convention in calchep, it does not seem likely for either of these limits to
+ apply.
+
+ In addition to the above "limitations" there are a couple of caveats:
+   1) This script uses Mathematica, so problems with incompatible versions
+      may appear. This script was developed and tested using Mathematica 7
+      but it should run on older versions since we are not doing anything
+      fancy.
+   2) If the lanhep/calchep files contain negative exponents e.g. X**-2 or X^-2
+      this script will malfunction. I may get around to fixing this but as it
+      is a very unlikely occurrence (X*Y**-2 is written as X/Y**2) the added
+      complexity is not worth it right now.
+   3) For some reason Mathematica in some instances leaves parentheses in place
+      after ComplexExpand. If these are in of form (X*Y*Z) they are removed,
+      but if they are of form (X+Y) this script will abort.
+   4) You can overwrite Your files with this script. Default behavior is to
+      avoid and always check, but for convenience if e.g. both input and output
+      files are given it is assumed that overwriting is intended.
+
+ Substitution of ** --> ^ is performed on the input lgrng.mdl file's Lorentz
+ part to avoid confusion with Mathematica's NonCommutativeMultiply. In fact,
+ by default, this script also parses all other parts of the lgrng and func
+ files and makes that substitution.
+
+ With respect to the coding: It is very easy to make perl code completely
+ unreadable, but faced with either learning pyhton or just commenting a lot
+ and trying to keep things simple, I chose the latter. If you want this script
+ without the metric ton of comments use perltidy --dsc or run something like
+ cat lag2func.pl | sed -E 's/[ ]+(\# |\(\*).+//g.
+
+ If You do release modified / new code based on this work I'd love know!
+ Needless to say, if you find bugs or think of specific improvements,
+ please don't hesitate to contact me.
+
+ ++Timo Ruppell

@@ -1,0 +1,14 @@
+ Licence: CC-BY-NC-SA
+
+ This script was written by Timo Ruppell (timo[dot]ruppell[at]gmail[dot]com)
+ and can be found at:
+
+ http://github.com/ProcessBlue/Lag2Func
+
+ It is distributed under the Creative Commons Attribution, Noncommercial, and
+ ShareAlike licence. This means You can copy, edit, modify, etc. to Your hearts 
+ content as long as You give me credit, don't make money and share Your work in
+ kind.
+
+ http://creativecommons.org/
+ http://en.wikipedia.org/wiki/Creative_Commons_licenses

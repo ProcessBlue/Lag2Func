@@ -1,0 +1,189 @@
+(M+1)SSM
+ Constraints 
+  Name |> Expression                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <&> Comment                      <|
+ CW    |sqrt(1-SW**2)                                                                        %cos of the Weinberg angle
+ S2W   |2*SW*CW                                                                              %
+ C2W   |CW**2-SW**2                                                                          %
+ MW    |MZ*CW                                                                                %W mass
+ c12   |sqrt(1-s12**2)                                                                       %parameter  of C-K-M matrix
+ c23   |sqrt(1-s23**2)                                                                       %parameter  of C-K-M matrix
+ c13   |sqrt(1-s13**2)                                                                       %parameter  of C-K-M matrix
+ Vud   |c12*c13                                                                              %C-K-M matrix element
+ Vus   |s12*c13                                                                              %C-K-M matrix element
+ Vub   |s13                                                                                  %C-K-M matrix element
+ Vcd   |-s12*c23-c12*s23*s13                                                                 %C-K-M matrix element
+ Vcs   |c12*c23-s12*s23*s13                                                                  %C-K-M matrix element
+ Vcb   |s23*c13                                                                              %C-K-M matrix element
+ Vtd   |s12*s23-c12*c23*s13                                                                  %C-K-M matrix element
+ Vts   |-c12*s23-s12*c23*s13                                                                 %C-K-M matrix element
+ Vtb   |c23*c13                                                                              %C-K-M matrix element
+ sph   |sqrt(1-cph**2)                                                                       %
+ sdl   |sqrt(1-cdl**2)                                                                       %
+ sb    |tb/sqrt(1+tb**2)                                                                     %Sinus beta
+ cb    |sqrt(1-sb**2)                                                                        %Cosine beta
+ t2b   |2*tb/(1-tb**2)                                                                       %
+ c2b   |cb**2-sb**2                                                                          %cos(2b)
+ s2b   |2*sb*cb                                                                              %sin(2b)
+ hx    |-Sqrt2*MW*SW/EE*hL*xvev                                                              %mu parameter
+ Zcsx  |(MG2**2+hx**2)/2+MW**2                                                               %
+ Zctx  |(MG2**2-hx**2)**2/4+MW**4*c2b**2+MW**2*(MG2**2+hx**2+2*hx*MG2*s2b)                   %
+ MC01  |sqrt(Zcsx-sqrt(Zctx))                                                                %
+ MC02  |sqrt(Zcsx+sqrt(Zctx))                                                                %
+ Zcc2u |-(MG2**2-hx**2-2*MW**2*c2b)/(MC02**2-MC01**2)                                        %
+ Zcc2v |-(MG2**2-hx**2+2*MW**2*c2b)/(MC02**2-MC01**2)                                        %
+ Zcsigu|-(MG2*cb+hx*sb)/sqrt((MG2*cb+hx*sb)**2)                                              %
+ Zcsigv|-(MG2*sb+hx*cb)/sqrt((MG2*sb+hx*cb)**2)                                              %
+ Zccu  |sqrt((1+Zcc2u)/2)                                                                    %
+ Zcsu  |sqrt((1-Zcc2u)/2)*Zcsigu                                                             %
+ Zccv  |sqrt((1+Zcc2v)/2)                                                                    %
+ Zcsv  |sqrt((1-Zcc2v)/2)*Zcsigv                                                             %
+ Zcsig1|(hx*MG2-MW**2*s2b)/sqrt((hx*MG2-MW**2*s2b)**2)                                       %
+ Zcsig2|MW*Sqrt2*(cb*Zcsu*Zccv+sb*Zccu*Zcsv)+hx*Zcsv*Zcsu+MG2*Zccu*Zccv                      %
+ Zcsig3|Zcsig1*Zcsig2/sqrt(Zcsig2**2)                                                        %
+ Zcsig4|-MW*Sqrt2*(cb*Zccu*Zcsv+sb*Zcsu*Zccv)+hx*Zccv*Zccu+MG2*Zcsu*Zcsv                     %
+ MC1   |Zcsig2**2/sqrt(Zcsig2**2)                                                            %1st chargino mass
+ MC2   |Zcsig4**2/sqrt(Zcsig4**2)                                                            %2nd chargino mass
+ Zm11  |Zccu*Zcsig1*Zcsig3                                                                   %
+ Zm12  |-Zcsu*Zcsig3                                                                         %
+ Zm21  |Zcsu*Zcsig1*Zcsig3                                                                   %
+ Zm22  |Zccu*Zcsig3                                                                          %
+ Zp11  |Zccv                                                                                 %
+ Zp12  |-Zcsv                                                                                %
+ Zp21  |Zcsv                                                                                 %
+ Zp22  |Zccv                                                                                 %
+ Znx0  |(MG1+MG2)/4                                                                          %
+ Znxc2 |MG1*MG2-MZ**2-hx**2-3/8*(MG1+MG2)**2                                                 %
+ Znxc3a|-1/8*(MG1+MG2)**3+1/2*(MG1+MG2)*(MG1*MG2-MZ**2-hx**2)                                %
+ Znxc3 |Znxc3a+(MG1+MG2)*hx**2+(MG1*CW**2+MG2*SW**2)*MZ**2-hx*MZ**2*s2b                      %
+ Znxc4b|(MG1*CW**2+MG2*SW**2)*hx*MZ**2*s2b-MG1*MG2*hx**2                                     %
+ Znxc4a|Znxc4b+Znx0**2*(MG1*MG2-MZ**2-hx**2)-3/256*(MG1+MG2)**4                              %
+ Znxc4 |Znxc4a+Znx0*((MG1+MG2)*hx**2+(MG1*CW**2+MG2*SW**2)*MZ**2-hx*MZ**2*s2b)               %
+ Znxs  |-Znxc3**2-2/27*Znxc2**3+8/3*Znxc2*Znxc4                                              %
+ Znxu  |-1/3*Znxc2**2-4*Znxc4                                                                %
+ Zncxd |-4*Znxu**3-27*Znxs**2                                                                %
+ Znm00 |sqrt(Zncxd/27)/2                                                                     %
+ Znm01 |-Znxs/2                                                                              %
+ Znm02 |sqrt(Znm00*Znm00+Znm01*Znm01)                                                        %
+ Znm03 |Znm00/Znm02                                                                          %
+ Znm04 |Znm01/Znm02                                                                          %
+ Znm10 |sqrt(Znm03*Znm03)                                                                    %
+ Znm11 |Znm03/Znm10                                                                          %
+ Znm12 |Znm06+Znm07*Znm10+Znm08*Znm10*Znm10+Znm09*Znm10*Znm10*Znm10                          %
+ Znm13 |Znm11*(Znm05/2-sqrt(1-Znm10)*Znm12)                                                  %
+ Znm15 |(sqrt(Znm04*Znm04)/Znm04+1)/2                                                        %
+ Znm16 |(Znm13*(2*Znm15-1)-Znm05*Znm11*(Znm15-1))/3                                          %
+ Znm17 |1-Znm16*Znm16/2*(1-Znm16*Znm16/12*(1-Znm16*Znm16/30))                                %
+ Znm20 |sqrt(sqrt(Znm02))                                                                    %
+ Znm21 |sqrt(sqrt(Znm20))                                                                    %
+ Znm22 |sqrt(sqrt(Znm21))                                                                    %
+ Znm24 |Znm20*Znm21*Znm22*sqrt(sqrt(Znm22))                                                  %
+ Znm25 |(2*Znm24+Znm02/Znm24/Znm24)/3                                                        %
+ Znm26 |(2*Znm25+Znm02/Znm25/Znm25)/3                                                        %
+ Znm27 |(2*Znm26+Znm02/Znm26/Znm26)/3                                                        %
+ Znm28 |Znm17*(2*Znm27+Znm02/Znm27/Znm27)/3                                                  %
+ Zncxa |Znm28                                                                                %
+ Zncxb |8*Zncxa-8/3*Znxc2                                                                    %
+ Zncx1 |Zncxa/2-Znxc2/6                                                                      %
+ Zncx2 |-Zncxa/2-Znxc2/3                                                                     %
+ Zncx3 |Znxc3/sqrt(Zncxb)                                                                    %
+ MNE1  |Znx0-sqrt(Zncx1)+sqrt(Zncx2+Zncx3)                                                   %1st neutralino mass
+ MNE2  |Znx0+sqrt(Zncx1)-sqrt(Zncx2-Zncx3)                                                   %2nd neutralino mass
+ MNE3  |Znx0-sqrt(Zncx1)-sqrt(Zncx2+Zncx3)                                                   %3rd neutralino mass
+ MNE4  |Znx0+sqrt(Zncx1)+sqrt(Zncx2-Zncx3)                                                   %4th neutralino mass
+ Znx12 |-CW/SW*(MG1-MNE1)/(MG2-MNE1)                                                         %
+ Znx1x |MZ*(MG2-MNE1)*SW*(hx*cb+MNE1*sb)                                                     %
+ Znx13 |(hx*(MG2-MNE1)*(MG1-MNE1)-MZ**2*sb*cb*((MG1-MG2)*CW**2+MG2-MNE1))/Znx1x              %
+ Znx14 |(-MNE1*(MG2-MNE1)*(MG1-MNE1)-MZ**2*cb*cb*((MG1-MG2)*CW**2+MG2-MNE1))/Znx1x           %
+ Zn11  |1/sqrt(1+Znx12**2+Znx13**2+Znx14**2)                                                 %
+ Zn21  |Zn11*Znx12                                                                           %
+ Zn31  |Zn11*Znx13                                                                           %
+ Zn41  |Zn11*Znx14                                                                           %
+ Znx22 |-CW/SW*(MG1-MNE2)/(MG2-MNE2)                                                         %
+ Znx2x |MZ*(MG2-MNE2)*SW*(hx*cb+MNE2*sb)                                                     %
+ Znx23 |(hx*(MG2-MNE2)*(MG1-MNE2)-MZ**2*sb*cb*((MG1-MG2)*CW**2+MG2-MNE2))/Znx2x              %
+ Znx24 |(-MNE2*(MG2-MNE2)*(MG1-MNE2)-MZ**2*cb*cb*((MG1-MG2)*CW**2+MG2-MNE2))/Znx2x           %
+ Zn12  |1/sqrt(1+Znx22**2+Znx23**2+Znx24**2)                                                 %
+ Zn22  |Zn12*Znx22                                                                           %
+ Zn32  |Zn12*Znx23                                                                           %
+ Zn42  |Zn12*Znx24                                                                           %
+ Znx32 |-CW/SW*(MG1-MNE3)/(MG2-MNE3)                                                         %
+ Znx3x |MZ*(MG2-MNE3)*SW*(hx*cb+MNE3*sb)                                                     %
+ Znx33 |(hx*(MG2-MNE3)*(MG1-MNE3)-MZ**2*sb*cb*((MG1-MG2)*CW**2+MG2-MNE3))/Znx3x              %
+ Znx34 |(-MNE3*(MG2-MNE3)*(MG1-MNE3)-MZ**2*cb*cb*((MG1-MG2)*CW**2+MG2-MNE3))/Znx3x           %
+ Zn13  |1/sqrt(1+Znx32**2+Znx33**2+Znx34**2)                                                 %
+ Zn23  |Zn13*Znx32                                                                           %
+ Zn33  |Zn13*Znx33                                                                           %
+ Zn43  |Zn13*Znx34                                                                           %
+ Znx42 |-CW/SW*(MG1-MNE4)/(MG2-MNE4)                                                         %
+ Znx4x |MZ*(MG2-MNE4)*SW*(hx*cb+MNE4*sb)                                                     %
+ Znx43 |(hx*(MG2-MNE4)*(MG1-MNE4)-MZ**2*sb*cb*((MG1-MG2)*CW**2+MG2-MNE4))/Znx4x              %
+ Znx44 |(-MNE4*(MG2-MNE4)*(MG1-MNE4)-MZ**2*cb*cb*((MG1-MG2)*CW**2+MG2-MNE4))/Znx4x           %
+ Zn14  |1/sqrt(1+Znx42**2+Znx43**2+Znx44**2)                                                 %
+ Zn24  |Zn14*Znx42                                                                           %
+ Zn34  |Zn14*Znx43                                                                           %
+ Zn44  |Zn14*Znx44                                                                           %
+ MSe1  |sqrt(-c2b*(CW**2-SW**2)*MW**2/2+CW**2*Ml1**2)/CW                                     %1st selectron mass
+ MSe2  |sqrt(-SW**2*c2b*MW**2+CW**2*Mr1**2)/CW                                               %2nd selectron mass
+ MSmu1 |sqrt(-c2b*(CW**2-SW**2)*MW**2/2+CW**2*Ml2**2)/CW                                     %1st smuon mass
+ MSmu2 |sqrt(-SW**2*c2b*MW**2+CW**2*Mr2**2)/CW                                               %2nd smuon mass
+ Zlm11 |Ml3**2+Mt**2-MW**2/CW**2*(1/2-SW**2)*c2b                                             %
+ Zlm12 |MW*SW*Sqrt2*cb*ls3/EE-Mt*hx*tb                                                       %
+ Zlm22 |Mr3**2+Mt**2-MW**2/CW**2*SW**2*c2b                                                   %
+ Zlmp  |Zlm11+Zlm22                                                                          %
+ Zlmm  |sqrt((Zlm11-Zlm22)**2+4*Zlm12**2)                                                    %
+ MStau1|sqrt((Zlmp-Zlmm)/2)                                                                  %
+ MStau2|sqrt((Zlmp+Zlmm)/2)                                                                  %
+ Zlc2  |(Zlm11-Zlm22)/(MStau1**2-MStau2**2)                                                  %
+ Zls2  |2*Zlm12/(MStau1**2-MStau2**2)                                                        %
+ Zlc   |sqrt(1+Zlc2)/Sqrt2                                                                   %
+ Zls   |Zls2/2/Zlc                                                                           %
+ Zl33  |Zlc                                                                                  %
+ Zl36  |-Zls                                                                                 %
+ Zl63  |Zls                                                                                  %
+ Zl66  |Zlc                                                                                  %
+ MSu1  |sqrt(Mq1**2+MW**2/CW**2*(1/2-2/3*SW**2)*c2b)                                         %
+ MSc1  |sqrt(Mq2**2+MW**2/CW**2*(1/2-2/3*SW**2)*c2b)                                         %
+ MSu2  |sqrt(Mu1**2+MW**2/CW**2*(2/3*SW**2)*c2b)                                             %
+ MSc2  |sqrt(Mu2**2+MW**2/CW**2*(2/3*SW**2)*c2b)                                             %
+ MSd1  |sqrt(Mq1**2-MW**2/CW**2*(1/2-1/3*SW**2)*c2b)                                         %
+ MSs1  |sqrt(Mq2**2-MW**2/CW**2*(1/2-1/3*SW**2)*c2b)                                         %
+ MSd2  |sqrt(Mu1**2+MW**2/CW**2*(-1/3*SW**2)*c2b)                                            %
+ MSs2  |sqrt(Mu2**2+MW**2/CW**2*(-1/3*SW**2)*c2b)                                            %
+ Zdm11 |Mq3**2+Mb**2-MW**2/CW**2*(1/2-1/3*SW**2)*c2b                                         %
+ Zdm12 |MW*SW*Sqrt2*cb*ds3/EE-Mb*hx*tb                                                       %
+ Zdm22 |Md3**2+Mb**2-1/3*MW**2/CW**2*SW**2*c2b                                               %
+ Zdmp  |Zdm11+Zdm22                                                                          %
+ Zdmm  |sqrt((Zdm11-Zdm22)**2+4*Zdm12**2)                                                    %
+ MSbot1|sqrt((Zdmp-Zdmm)/2)                                                                  %
+ MSbot2|sqrt((Zdmp+Zdmm)/2)                                                                  %
+ Zdc2  |(Zdm11-Zdm22)/(MSbot1**2-MSbot2**2)                                                  %
+ Zds2  |2*Zdm12/(MSbot1**2-MSbot2**2)                                                        %
+ Zdc   |sqrt(1+Zdc2)/Sqrt2                                                                   %
+ Zds   |Zds2/2/Zdc                                                                           %
+ Zum11 |Mq3**2+Mtop**2+MW**2/CW**2*(1/2-2/3*SW**2)*c2b                                       %
+ Zum12 |-MW*SW*Sqrt2*sb*us3/EE-Mtop*hx/tb                                                    %
+ Zum22 |Mu3**2+Mtop**2+2/3*MW**2/CW**2*SW**2*c2b                                             %
+ Zump  |Zum11+Zum22                                                                          %
+ Zumm  |sqrt((Zum11-Zum22)**2+4*Zum12**2)                                                    %
+ MStop1|sqrt((Zump-Zumm)/2)                                                                  %
+ MStop2|sqrt((Zump+Zumm)/2)                                                                  %
+ Zuc2  |(Zum11-Zum22)/(MStop1**2-MStop2**2)                                                  %
+ Zus2  |2*Zum12/(MStop1**2-MStop2**2)                                                        %
+ Zuc   |sqrt(1+Zuc2)/Sqrt2                                                                   %
+ Zus   |Zus2/2/Zuc                                                                           %
+ Zd33  |Zdc                                                                                  %
+ Zd36  |-Zds                                                                                 %
+ Zd63  |Zds                                                                                  %
+ Zd66  |Zdc                                                                                  %
+ Zu33  |Zuc                                                                                  %
+ Zu36  |-Zus                                                                                 %
+ Zu63  |Zus                                                                                  %
+ Zu66  |Zuc                                                                                  %
+ A05   |-EE^2*Mt^2*sb*Sqrt2*Xn34*Zh16*Zl33+cb^2*EE^2*MW^2*sb*Sqrt2*Xn34*Zh16*Zl33-2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn14*Zh26*Zl33-2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn24*Zh26*Zl33+cb^3*EE^2*MW^2*Sqrt2*Xn34*Zh26*Zl33-2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn34*Zh26*Zl33+4*cb^3*hs1*hs2*MW^2*Sqrt2*SW^2*Xn44*Zh36*Zl33+2*cb^2*hL*hs2*MW^2*sb*Sqrt2*SW^2*Xn44*Zh36*Zl33-EE^2*Mt^2*sb*Sqrt2*Xn74*Zh46*Zl33+cb^2*EE^2*MW^2*sb*Sqrt2*Xn74*Zh46*Zl33+2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn54*Zh55*Zl33+2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn64*Zh55*Zl33-cb^3*EE^2*MW^2*Sqrt2*Xn74*Zh55*Zl33+2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn74*Zh55*Zl33-4*cb^3*hs1*hs2*MW^2*Sqrt2*SW^2*Xn84*Zh65*Zl33+2*cb^2*hL*hs2*MW^2*sb*Sqrt2*SW^2*Xn84*Zh65*Zl33-2*cb^2*EE*hs2*Mt*MW*SW*Xn44*Zh16*Zl63-EE*hs2*Mt*MW*s2b*SW*Xn44*Zh26*Zl63+2*cb^2*EE*hL*Mt*MW*SW*Xn34*Zh36*Zl63-2*cb^2*EE*hs2*Mt*MW*SW*Xn84*Zh46*Zl63+EE*hs2*Mt*MW*s2b*SW*Xn84*Zh55*Zl63+2*cb^2*EE*hL*Mt*MW*SW*Xn74*Zh65*Zl63
+ B05   |EE^2*Mt^2*sb*Sqrt2*Xn74*Zh16*Zl33-cb^2*EE^2*MW^2*sb*Sqrt2*Xn74*Zh16*Zl33+2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn54*Zh26*Zl33+2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn64*Zh26*Zl33-cb^3*EE^2*MW^2*Sqrt2*Xn74*Zh26*Zl33+2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn74*Zh26*Zl33-4*cb^3*hs1*hs2*MW^2*Sqrt2*SW^2*Xn84*Zh36*Zl33+2*cb^2*hL*hs2*MW^2*sb*Sqrt2*SW^2*Xn84*Zh36*Zl33-EE^2*Mt^2*sb*Sqrt2*Xn34*Zh46*Zl33+cb^2*EE^2*MW^2*sb*Sqrt2*Xn34*Zh46*Zl33+2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn14*Zh55*Zl33+2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn24*Zh55*Zl33-cb^3*EE^2*MW^2*Sqrt2*Xn34*Zh55*Zl33+2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn34*Zh55*Zl33-4*cb^3*hs1*hs2*MW^2*Sqrt2*SW^2*Xn44*Zh65*Zl33-2*cb^2*hL*hs2*MW^2*sb*Sqrt2*SW^2*Xn44*Zh65*Zl33-2*cb^2*EE*hs2*Mt*MW*SW*Xn84*Zh16*Zl63-EE*hs2*Mt*MW*s2b*SW*Xn84*Zh26*Zl63-2*cb^2*EE*hL*Mt*MW*SW*Xn74*Zh36*Zl63+2*cb^2*EE*hs2*Mt*MW*SW*Xn44*Zh46*Zl63-EE*hs2*Mt*MW*s2b*SW*Xn44*Zh55*Zl63+2*cb^2*EE*hL*Mt*MW*SW*Xn34*Zh65*Zl63
+ A06   |-EE^2*Mt^2*sb*Sqrt2*Xn34*Zh11*Zl36+cb^2*EE^2*MW^2*sb*Sqrt2*Xn34*Zh11*Zl36-2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn14*Zh21*Zl36-2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn24*Zh21*Zl36+cb^3*EE^2*MW^2*Sqrt2*Xn34*Zh21*Zl36-2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn34*Zh21*Zl36+4*cb^3*hs1*hs2*MW^2*Sqrt2*SW^2*Xn44*Zh31*Zl36+2*cb^2*hL*hs2*MW^2*sb*Sqrt2*SW^2*Xn44*Zh31*Zl36-EE^2*Mt^2*sb*Sqrt2*Xn74*Zh41*Zl36+cb^2*EE^2*MW^2*sb*Sqrt2*Xn74*Zh41*Zl36+2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn54*Zh51*Zl36+2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn64*Zh51*Zl36-cb^3*EE^2*MW^2*Sqrt2*Xn74*Zh51*Zl36+2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn74*Zh51*Zl36-4*cb^3*hs1*hs2*MW^2*Sqrt2*SW^2*Xn84*Zh61*Zl36+2*cb^2*hL*hs2*MW^2*sb*Sqrt2*SW^2*Xn84*Zh61*Zl36-2*cb^2*EE*hs2*Mt*MW*SW*Xn44*Zh11*Zl66-EE*hs2*Mt*MW*s2b*SW*Xn44*Zh21*Zl66+2*cb^2*EE*hL*Mt*MW*SW*Xn34*Zh31*Zl66-2*cb^2*EE*hs2*Mt*MW*SW*Xn84*Zh41*Zl66+EE*hs2*Mt*MW*s2b*SW*Xn84*Zh51*Zl66+2*cb^2*EE*hL*Mt*MW*SW*Xn74*Zh61*Zl66
+ B06   |-EE^2*Mt^2*sb*Sqrt2*Xn74*Zh11*Zl36+cb^2*EE^2*MW^2*sb*Sqrt2*Xn74*Zh11*Zl36-2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn54*Zh21*Zl36-2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn64*Zh21*Zl36+cb^3*EE^2*MW^2*Sqrt2*Xn74*Zh21*Zl36-2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn74*Zh21*Zl36+4*cb^3*hs1*hs2*MW^2*Sqrt2*SW^2*Xn84*Zh31*Zl36-2*cb^2*hL*hs2*MW^2*sb*Sqrt2*SW^2*Xn84*Zh31*Zl36+EE^2*Mt^2*sb*Sqrt2*Xn34*Zh41*Zl36-cb^2*EE^2*MW^2*sb*Sqrt2*Xn34*Zh41*Zl36-2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn14*Zh51*Zl36-2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn24*Zh51*Zl36+cb^3*EE^2*MW^2*Sqrt2*Xn34*Zh51*Zl36-2*cb^3*hs2^2*MW^2*Sqrt2*SW^2*Xn34*Zh51*Zl36+4*cb^3*hs1*hs2*MW^2*Sqrt2*SW^2*Xn44*Zh61*Zl36+2*cb^2*hL*hs2*MW^2*sb*Sqrt2*SW^2*Xn44*Zh61*Zl36+2*cb^2*EE*hs2*Mt*MW*SW*Xn84*Zh11*Zl66+EE*hs2*Mt*MW*s2b*SW*Xn84*Zh21*Zl66+2*cb^2*EE*hL*Mt*MW*SW*Xn74*Zh31*Zl66-2*cb^2*EE*hs2*Mt*MW*SW*Xn44*Zh41*Zl66+EE*hs2*Mt*MW*s2b*SW*Xn44*Zh51*Zl66-2*cb^2*EE*hL*Mt*MW*SW*Xn34*Zh61*Zl66
+ A08   |cb*EE^2*MW*Xn16^2*Zh16+cb*EE^2*MW*Xn26^2*Zh16+cb*EE^2*MW*Xn36^2*Zh16-4*cph*CW^2*hL*hs1*MW*sb*SW^2*Xn46^2*Zh16+cb*EE^2*MW*Xn56^2*Zh16+cb*EE^2*MW*Xn66^2*Zh16+cb*EE^2*MW*Xn76^2*Zh16-8*CW^2*hL*hs1*MW*sb*sph*SW^2*Xn46*Xn86*Zh16+4*cph*CW^2*hL*hs1*MW*sb*SW^2*Xn86^2*Zh16+4*cdl*CW^2*hL*hs2*MW*SW^2*Xn16*Xn46*xvev*Zh16+4*cdl*CW^2*hL*hs2*MW*SW^2*Xn26*Xn46*xvev*Zh16+4*cdl*CW^2*hL*hs2*MW*SW^2*Xn36*Xn46*xvev*Zh16+4*CW^2*hL*hs2*MW*sdl*SW^2*Xn46*Xn56*xvev*Zh16+4*CW^2*hL*hs2*MW*sdl*SW^2*Xn46*Xn66*xvev*Zh16+4*CW^2*hL*hs2*MW*sdl*SW^2*Xn46*Xn76*xvev*Zh16+4*CW^2*hL*hs2*MW*sdl*SW^2*Xn16*Xn86*xvev*Zh16+4*CW^2*hL*hs2*MW*sdl*SW^2*Xn26*Xn86*xvev*Zh16+4*CW^2*hL*hs2*MW*sdl*SW^2*Xn36*Xn86*xvev*Zh16-4*cdl*CW^2*hL*hs2*MW*SW^2*Xn56*Xn86*xvev*Zh16-4*cdl*CW^2*hL*hs2*MW*SW^2*Xn66*Xn86*xvev*Zh16-4*cdl*CW^2*hL*hs2*MW*SW^2*Xn76*Xn86*xvev*Zh16-cph*EE^2*MW*sb*Xn16^2*Zh26+4*cph*CW^2*hs2^2*MW*sb*SW^2*Xn16^2*Zh26+8*cph*CW^2*hs2^2*MW*sb*SW^2*Xn16*Xn26*Zh26-cph*EE^2*MW*sb*Xn26^2*Zh26+4*cph*CW^2*hs2^2*MW*sb*SW^2*Xn26^2*Zh26+8*cph*CW^2*hs2^2*MW*sb*SW^2*Xn16*Xn36*Zh26+8*cph*CW^2*hs2^2*MW*sb*SW^2*Xn26*Xn36*Zh26-cph*EE^2*MW*sb*Xn36^2*Zh26+4*cph*CW^2*hs2^2*MW*sb*SW^2*Xn36^2*Zh26-2*CW^2*EE*hs2*hs2s*Sqrt2*SW*Xn16*Xn46*Zh26-2*CW^2*EE*hs2*hs2s*Sqrt2*SW*Xn26*Xn46*Zh26-2*CW^2*EE*hs2*hs2s*Sqrt2*SW*Xn36*Xn46*Zh26-4*cb*CW^2*hL*hs1*MW*SW^2*Xn46^2*Zh26+12*cph*CW^2*hs2^2*MW*sb*SW^2*Xn46^2*Zh26-cph*EE^2*MW*sb*Xn56^2*Zh26+4*cph*CW^2*hs2^2*MW*sb*SW^2*Xn56^2*Zh26+8*cph*CW^2*hs2^2*MW*sb*SW^2*Xn56*Xn66*Zh26-cph*EE^2*MW*sb*Xn66^2*Zh26+4*cph*CW^2*hs2^2*MW*sb*SW^2*Xn66^2*Zh26+8*cph*CW^2*hs2^2*MW*sb*SW^2*Xn56*Xn76*Zh26+8*cph*CW^2*hs2^2*MW*sb*SW^2*Xn66*Xn76*Zh26-cph*EE^2*MW*sb*Xn76^2*Zh26+4*cph*CW^2*hs2^2*MW*sb*SW^2*Xn76^2*Zh26+2*CW^2*EE*hs2*hs2s*Sqrt2*SW*Xn56*Xn86*Zh26+2*CW^2*EE*hs2*hs2s*Sqrt2*SW*Xn66*Xn86*Zh26+2*CW^2*EE*hs2*hs2s*Sqrt2*SW*Xn76*Xn86*Zh26
+ B08   |+4*cb*CW^2*hL*hs1*MW*SW^2*Xn86^2*Zh26+12*cph*CW^2*hs2^2*MW*sb*SW^2*Xn86^2*Zh26-8*cdl*CW^2*hs1*hs2*MW*SW^2*Xn16*Xn46*xvev*Zh26-8*cdl*CW^2*hs1*hs2*MW*SW^2*Xn26*Xn46*xvev*Zh26-8*cdl*CW^2*hs1*hs2*MW*SW^2*Xn36*Xn46*xvev*Zh26-8*CW^2*hs1*hs2*MW*sdl*SW^2*Xn46*Xn56*xvev*Zh26-8*CW^2*hs1*hs2*MW*sdl*SW^2*Xn46*Xn66*xvev*Zh26-8*CW^2*hs1*hs2*MW*sdl*SW^2*Xn46*Xn76*xvev*Zh26+8*CW^2*hs1*hs2*MW*sdl*SW^2*Xn16*Xn86*xvev*Zh26+8*CW^2*hs1*hs2*MW*sdl*SW^2*Xn26*Xn86*xvev*Zh26+8*CW^2*hs1*hs2*MW*sdl*SW^2*Xn36*Xn86*xvev*Zh26-8*cdl*CW^2*hs1*hs2*MW*SW^2*Xn56*Xn86*xvev*Zh26-8*cdl*CW^2*hs1*hs2*MW*SW^2*Xn66*Xn86*xvev*Zh26-8*cdl*CW^2*hs1*hs2*MW*SW^2*Xn76*Xn86*xvev*Zh26+4*cb*CW^2*hL*hs2*MW*SW^2*Xn16*Xn46*Zh36-8*cph*CW^2*hs1*hs2*MW*sb*SW^2*Xn16*Xn46*Zh36+4*cb*CW^2*hL*hs2*MW*SW^2*Xn26*Xn46*Zh36-8*cph*CW^2*hs1*hs2*MW*sb*SW^2*Xn26*Xn46*Zh36+4*cb*CW^2*hL*hs2*MW*SW^2*Xn36*Xn46*Zh36-8*cph*CW^2*hs1*hs2*MW*sb*SW^2*Xn36*Xn46*Zh36+2*CW^2*EE*hs1*hs1s*Sqrt2*SW*Xn46^2*Zh36+8*CW^2*hs1*hs2*MW*sb*sph*SW^2*Xn46*Xn56*Zh36+8*CW^2*hs1*hs2*MW*sb*sph*SW^2*Xn46*Xn66*Zh36+8*CW^2*hs1*hs2*MW*sb*sph*SW^2*Xn46*Xn76*Zh36-8*CW^2*hs1*hs2*MW*sb*sph*SW^2*Xn16*Xn86*Zh36-8*CW^2*hs1*hs2*MW*sb*sph*SW^2*Xn26*Xn86*Zh36-8*CW^2*hs1*hs2*MW*sb*sph*SW^2*Xn36*Xn86*Zh36-4*cb*CW^2*hL*hs2*MW*SW^2*Xn56*Xn86*Zh36-8*cph*CW^2*hs1*hs2*MW*sb*SW^2*Xn56*Xn86*Zh36-4*cb*CW^2*hL*hs2*MW*SW^2*Xn66*Xn86*Zh36-8*cph*CW^2*hs1*hs2*MW*sb*SW^2*Xn66*Xn86*Zh36-4*cb*CW^2*hL*hs2*MW*SW^2*Xn76*Xn86*Zh36-8*cph*CW^2*hs1*hs2*MW*sb*SW^2*Xn76*Xn86*Zh36-2*CW^2*EE*hs1*hs1s*Sqrt2*SW*Xn86^2*Zh36+8*cdl*CW^2*hK*hs1*MW*SW^2*Xn46^2*xvev*Zh36+16*cdl*CW^2*hs1^2*MW*SW^2*Xn46^2*xvev*Zh36+16*CW^2*hK*hs1*MW*sdl*SW^2*Xn46*Xn86*xvev*Zh36-8*cdl*CW^2*hK*hs1*MW*SW^2*Xn86^2*xvev*Zh36+16*cdl*CW^2*hs1^2*MW*SW^2*Xn86^2*xvev*Zh36+4*CW^2*hL*hs1*MW*sb*sph*SW^2*Xn46^2*Zh46-8*cph*CW^2*hL*hs1*MW*sb*SW^2*Xn46*Xn86*Zh46
+ C08   |-4*CW^2*hL*hs1*MW*sb*sph*SW^2*Xn86^2*Zh46-4*CW^2*hL*hs2*MW*sdl*SW^2*Xn16*Xn46*xvev*Zh46-4*CW^2*hL*hs2*MW*sdl*SW^2*Xn26*Xn46*xvev*Zh46-4*CW^2*hL*hs2*MW*sdl*SW^2*Xn36*Xn46*xvev*Zh46+4*cdl*CW^2*hL*hs2*MW*SW^2*Xn46*Xn56*xvev*Zh46+4*cdl*CW^2*hL*hs2*MW*SW^2*Xn46*Xn66*xvev*Zh46+4*cdl*CW^2*hL*hs2*MW*SW^2*Xn46*Xn76*xvev*Zh46+4*cdl*CW^2*hL*hs2*MW*SW^2*Xn16*Xn86*xvev*Zh46+4*cdl*CW^2*hL*hs2*MW*SW^2*Xn26*Xn86*xvev*Zh46+4*cdl*CW^2*hL*hs2*MW*SW^2*Xn36*Xn86*xvev*Zh46+4*CW^2*hL*hs2*MW*sdl*SW^2*Xn56*Xn86*xvev*Zh46+4*CW^2*hL*hs2*MW*sdl*SW^2*Xn66*Xn86*xvev*Zh46+4*CW^2*hL*hs2*MW*sdl*SW^2*Xn76*Xn86*xvev*Zh46-EE^2*MW*sb*sph*Xn16^2*Zh55+4*CW^2*hs2^2*MW*sb*sph*SW^2*Xn16^2*Zh55+8*CW^2*hs2^2*MW*sb*sph*SW^2*Xn16*Xn26*Zh55-EE^2*MW*sb*sph*Xn26^2*Zh55+4*CW^2*hs2^2*MW*sb*sph*SW^2*Xn26^2*Zh55+8*CW^2*hs2^2*MW*sb*sph*SW^2*Xn16*Xn36*Zh55+8*CW^2*hs2^2*MW*sb*sph*SW^2*Xn26*Xn36*Zh55-EE^2*MW*sb*sph*Xn36^2*Zh55+4*CW^2*hs2^2*MW*sb*sph*SW^2*Xn36^2*Zh55+12*CW^2*hs2^2*MW*sb*sph*SW^2*Xn46^2*Zh55+2*CW^2*EE*hs2*hs2s*Sqrt2*SW*Xn46*Xn56*Zh55-EE^2*MW*sb*sph*Xn56^2*Zh55+4*CW^2*hs2^2*MW*sb*sph*SW^2*Xn56^2*Zh55+2*CW^2*EE*hs2*hs2s*Sqrt2*SW*Xn46*Xn66*Zh55+8*CW^2*hs2^2*MW*sb*sph*SW^2*Xn56*Xn66*Zh55-EE^2*MW*sb*sph*Xn66^2*Zh55+4*CW^2*hs2^2*MW*sb*sph*SW^2*Xn66^2*Zh55+2*CW^2*EE*hs2*hs2s*Sqrt2*SW*Xn46*Xn76*Zh55+8*CW^2*hs2^2*MW*sb*sph*SW^2*Xn56*Xn76*Zh55+8*CW^2*hs2^2*MW*sb*sph*SW^2*Xn66*Xn76*Zh55-EE^2*MW*sb*sph*Xn76^2*Zh55+4*CW^2*hs2^2*MW*sb*sph*SW^2*Xn76^2*Zh55+2*CW^2*EE*hs2*hs2s*Sqrt2*SW*Xn16*Xn86*Zh55+2*CW^2*EE*hs2*hs2s*Sqrt2*SW*Xn26*Xn86*Zh55+2*CW^2*EE*hs2*hs2s*Sqrt2*SW*Xn36*Xn86*Zh55-8*cb*CW^2*hL*hs1*MW*SW^2*Xn46*Xn86*Zh55+12*CW^2*hs2^2*MW*sb*sph*SW^2*Xn86^2*Zh55-8*CW^2*hs1*hs2*MW*sdl*SW^2*Xn16*Xn46*xvev*Zh55-8*CW^2*hs1*hs2*MW*sdl*SW^2*Xn26*Xn46*xvev*Zh55-8*CW^2*hs1*hs2*MW*sdl*SW^2*Xn36*Xn46*xvev*Zh55+8*cdl*CW^2*hs1*hs2*MW*SW^2*Xn46*Xn56*xvev*Zh55
+ D08   |+8*cdl*CW^2*hs1*hs2*MW*SW^2*Xn46*Xn66*xvev*Zh55+8*cdl*CW^2*hs1*hs2*MW*SW^2*Xn46*Xn76*xvev*Zh55-8*cdl*CW^2*hs1*hs2*MW*SW^2*Xn16*Xn86*xvev*Zh55-8*cdl*CW^2*hs1*hs2*MW*SW^2*Xn26*Xn86*xvev*Zh55-8*cdl*CW^2*hs1*hs2*MW*SW^2*Xn36*Xn86*xvev*Zh55-8*CW^2*hs1*hs2*MW*sdl*SW^2*Xn56*Xn86*xvev*Zh55-8*CW^2*hs1*hs2*MW*sdl*SW^2*Xn66*Xn86*xvev*Zh55-8*CW^2*hs1*hs2*MW*sdl*SW^2*Xn76*Xn86*xvev*Zh55-8*CW^2*hs1*hs2*MW*sb*sph*SW^2*Xn16*Xn46*Zh65-8*CW^2*hs1*hs2*MW*sb*sph*SW^2*Xn26*Xn46*Zh65-8*CW^2*hs1*hs2*MW*sb*sph*SW^2*Xn36*Xn46*Zh65+4*cb*CW^2*hL*hs2*MW*SW^2*Xn46*Xn56*Zh65-8*cph*CW^2*hs1*hs2*MW*sb*SW^2*Xn46*Xn56*Zh65+4*cb*CW^2*hL*hs2*MW*SW^2*Xn46*Xn66*Zh65-8*cph*CW^2*hs1*hs2*MW*sb*SW^2*Xn46*Xn66*Zh65+4*cb*CW^2*hL*hs2*MW*SW^2*Xn46*Xn76*Zh65-8*cph*CW^2*hs1*hs2*MW*sb*SW^2*Xn46*Xn76*Zh65+4*cb*CW^2*hL*hs2*MW*SW^2*Xn16*Xn86*Zh65+8*cph*CW^2*hs1*hs2*MW*sb*SW^2*Xn16*Xn86*Zh65+4*cb*CW^2*hL*hs2*MW*SW^2*Xn26*Xn86*Zh65+8*cph*CW^2*hs1*hs2*MW*sb*SW^2*Xn26*Xn86*Zh65+4*cb*CW^2*hL*hs2*MW*SW^2*Xn36*Xn86*Zh65+8*cph*CW^2*hs1*hs2*MW*sb*SW^2*Xn36*Xn86*Zh65-4*CW^2*EE*hs1*hs1s*Sqrt2*SW*Xn46*Xn86*Zh65-8*CW^2*hs1*hs2*MW*sb*sph*SW^2*Xn56*Xn86*Zh65-8*CW^2*hs1*hs2*MW*sb*sph*SW^2*Xn66*Xn86*Zh65-8*CW^2*hs1*hs2*MW*sb*sph*SW^2*Xn76*Xn86*Zh65-8*CW^2*hK*hs1*MW*sdl*SW^2*Xn46^2*xvev*Zh65+16*CW^2*hs1^2*MW*sdl*SW^2*Xn46^2*xvev*Zh65+16*cdl*CW^2*hK*hs1*MW*SW^2*Xn46*Xn86*xvev*Zh65+8*CW^2*hK*hs1*MW*sdl*SW^2*Xn86^2*xvev*Zh65+16*CW^2*hs1^2*MW*sdl*SW^2*Xn86^2*xvev*Zh65

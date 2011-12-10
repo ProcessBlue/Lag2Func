@@ -1,0 +1,8 @@
+(M+1)SSM
+ Lagrangian 
+P1   |P2   |P3   |P4   |>   Factor                                                 <|> dLagrangian/ dA(p1) dA(p2) dA(p3)                                                                                                            <|
+~1+  |~o1  |W-   |     |-EE/(4*SW)                                                  |2*Zm11*Zn21*G(m3)*(1-G5)+2*Zn21*Zp11*G(m3)*(1+G5)+Sqrt2*Zm21*Zn31*G(m3)*(1-G5)-Sqrt2*Zn41*Zp21*G(m3)*(1+G5)
+H+   |hb   |~e3  |~n4  |-1/(4*MW**2*SW**2*cb^2)                                     |A05+B05*i
+H-   |h1   |~E6  |~n4  |-1/(4*MW^2*SW^2*cb^2)                                       |A06+B06*i
+B    |~1-  |~t1  |     |-EE*Vtb/(2*MW*SW*s2b)                                       |(MW*s2b*Zp11*Zu33*(1+G5)-Mb*sb*Sqrt2*Zm21*Zu33*(1-G5)-Mtop*cb*Sqrt2*Zp21*Zu63*(1+G5))
+hb   |~N2  |~N2  |     |-1/(CW**2*EE*SW)                                            |A08+B08+C08+D08

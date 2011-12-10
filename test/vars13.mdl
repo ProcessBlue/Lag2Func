@@ -1,0 +1,242 @@
+(M+1)SSM
+ Variables 
+  Name | Value       |>  Comment                                   <|
+ EE    |0.31333      |Electromagnetic coupling constant (<->1/128)
+ GG    |1.117        |Strong coupling constant (Z point)  (PDG-94)
+ SW    |0.474        |sin of the Weinberg angle (PDG-94,"on-shell")
+ s12   |0.221        |Parameter of C-K-M matrix (PDG-94)
+ s23   |0.04         |Parameter of C-K-M matrix (PDG-94)
+ s13   |0.0035       |Parameter of C-K-M matrix (PDG-94)
+ MZ    |91.187       |Z mass
+ Mm    |0.1057       |mass of muon
+ Mt    |1.777        |mass of tau-lepton
+ MNR   |1000         |mass of right-neutrino
+ Mc    |1.3          |c-quark mass
+ Ms    |0.2          |s-quark mass
+ Mtop  |170          |top quark mass
+ Mb    |4.3          |b-quark mass
+ wtop  |1.442        |width of top quark
+ wNR   |70           |width of r-neutrino
+ wZ    |2.502        |Z-boson width
+ wW    |2.094        |W-boson width
+ cph   |0.5          |
+ cdl   |0.5          |
+ Mh1   |90           |
+ Mh2   |100          |
+ Mh3   |110          |
+ Mha   |105          |
+ Mhb   |115          |
+ MHc   |120          |
+ wh1   |0.088        |Width of 1st Higgs
+ wh2   |18.6         |Width of 2nd higgs
+ wh3   |19           |Width of 3rd Higgs
+ wha   |18.6         |Width of higgs A1
+ whb   |19           |Width of Higgs A2
+ wHc   |9.9          |Width of charged Higgs
+ hL    |0.46         |lambda higgs parameter(SHH)
+ hK    |0.32         |kappa higgs parameter (S^3)
+ hs1   |0.51         |kappa Majorana parameter (S N^2)
+ hs2   |0.51         |kappa Dirac parameter (LHN)
+ hLs   |0.36         |lambda soft higgs parameter
+ hKs   |0.12         |kappa soft higgs parameter
+ hs1s  |0.51         |kappa soft Majorana parameter
+ hs2s  |0.51         |kappa soft Dirac parameter
+ zt    |10           |soft parameter S- CPV
+ xvev  |100          |
+ Zh11  |0            |
+ Zh12  |0            |
+ Zh13  |0            |
+ Zh14  |0            |
+ Zh15  |0            |
+ Zh16  |0            |
+ Zh21  |0            |
+ Zh22  |0            |
+ Zh23  |0            |
+ Zh24  |0            |
+ Zh25  |0            |
+ Zh26  |0            |
+ Zh31  |0            |
+ Zh32  |0            |
+ Zh33  |0            |
+ Zh34  |0            |
+ Zh35  |0            |
+ Zh36  |0            |
+ Zh41  |0            |
+ Zh42  |0            |
+ Zh43  |0            |
+ Zh44  |0            |
+ Zh45  |0            |
+ Zh46  |0            |
+ Zh51  |0            |
+ Zh52  |0            |
+ Zh53  |0            |
+ Zh54  |0            |
+ Zh55  |0            |
+ Zh56  |0            |
+ Zh61  |0            |
+ Zh62  |0            |
+ Zh63  |0            |
+ Zh64  |0            |
+ Zh65  |0            |
+ Zh66  |0            |
+ MG1   |25.1         |
+ MG2   |50           |
+ MG3   |300          |
+ Znm05 |3.14159      |
+ Znm06 |1.57073      |
+ Znm07 |-0.212114    |
+ Znm08 |0.074261     |
+ Znm09 |-0.0187293   |
+ wC1   |3e-05        |width of chargino 1
+ wC2   |7.26         |width of chargino 2
+ wNE2  |2e-07        |width of neutralino 2
+ wNE3  |1.9          |width of neutralino 3
+ wNE4  |12           |width of neutralino 4
+ wSG   |0.0003       |width of gluino
+ MNE5  |500          |5th neutralino mass
+ wNE5  |16           |width of neutralino 5
+ Zn15  |0            |
+ Zn25  |0            |
+ Zn35  |0            |
+ Zn45  |0            |
+ Zn55  |1            |
+ Zn54  |0            |
+ Zn53  |0            |
+ Zn52  |0            |
+ Zn51  |0            |
+ Ml1   |800          |ML1
+ Ml2   |800          |ML2
+ Ml3   |802.65       |ML3
+ Mr1   |800          |MR1
+ Mr2   |800          |MR2
+ Mx4   |800          |MNs soft term
+ Mr3   |804.23       |MR3
+ ls3   |21           |Tau soft coupling
+ MSnR1 |800          |Right-Sneu-even mass
+ MSnR2 |800          |Right-Sneu-odd mass
+ MSne1 |500          |e-sneu-even mass
+ MSne2 |500          |e-sneu-odd mass
+ MSnmu1|500          |m-sneu-even mass
+ MSnmu2|500          |m-sneu-odd mass
+ MSntau1|500          |t-sneu-even mass
+ MSntau2|500          |t-sneu-odd mass
+ wSne1 |11           |e-sneutrino width
+ wSnmu1|11           |mu-sneutrino width
+ wSnR1 |10           |rt-sneutrino width
+ wSntau1|35           |tau-sneutrino width
+ wSne2 |11           |e-sneutrino width
+ wSnmu2|11           |mu-sneutrino width
+ wSnR2 |10           |rt-sneutrino width
+ wSntau2|35           |tau-sneutrino width
+ wSe1  |11           |width of 1st selectron
+ wSe2  |3.4          |width of 2nd selectron
+ wSmu1 |7.7          |width of 1st smuon
+ wSmu2 |3.4          |width of 2nd smuon
+ wStau1|7.6          |width of 1st stau
+ wStau2|9.4          |width of 2nd stau
+ Xn11  |0            |
+ Xn12  |0            |
+ Xn13  |0            |
+ Xn14  |0            |
+ Xn15  |0            |
+ Xn16  |0            |
+ Xn17  |0            |
+ Xn18  |0            |
+ Xn21  |0            |
+ Xn22  |0            |
+ Xn23  |0            |
+ Xn24  |0            |
+ Xn25  |0            |
+ Xn26  |0            |
+ Xn27  |0            |
+ Xn28  |0            |
+ Xn31  |0            |
+ Xn32  |0            |
+ Xn33  |0            |
+ Xn34  |0            |
+ Xn35  |0            |
+ Xn36  |0            |
+ Xn37  |0            |
+ Xn38  |0            |
+ Xn41  |0            |
+ Xn42  |0            |
+ Xn43  |0            |
+ Xn44  |0            |
+ Xn45  |0            |
+ Xn46  |0            |
+ Xn47  |0            |
+ Xn48  |0            |
+ Xn51  |0            |
+ Xn52  |0            |
+ Xn53  |0            |
+ Xn54  |0            |
+ Xn55  |0            |
+ Xn56  |0            |
+ Xn57  |0            |
+ Xn58  |0            |
+ Xn61  |0            |
+ Xn62  |0            |
+ Xn63  |0            |
+ Xn64  |0            |
+ Xn65  |0            |
+ Xn66  |0            |
+ Xn67  |0            |
+ Xn68  |0            |
+ Xn71  |0            |
+ Xn72  |0            |
+ Xn73  |0            |
+ Xn74  |0            |
+ Xn75  |0            |
+ Xn76  |0            |
+ Xn77  |0            |
+ Xn78  |0            |
+ Xn81  |0            |
+ Xn82  |0            |
+ Xn83  |0            |
+ Xn84  |0            |
+ Xn85  |0            |
+ Xn86  |0            |
+ Xn87  |0            |
+ Xn88  |0            |
+ Yn11  |0            |
+ Yn12  |0            |
+ Yn13  |0            |
+ Yn14  |0            |
+ Yn21  |0            |
+ Yn22  |0            |
+ Yn23  |0            |
+ Yn24  |0            |
+ Yn31  |0            |
+ Yn32  |0            |
+ Yn33  |0            |
+ Yn34  |0            |
+ Yn41  |0            |
+ Yn42  |0            |
+ Yn43  |0            |
+ Yn44  |0            |
+ Mq1   |800          |
+ Mq2   |700          |
+ Mq3   |600          |
+ Mu1   |800          |
+ Mu2   |800          |
+ Mu3   |800          |
+ Md1   |800          |
+ Md2   |800          |
+ Md3   |800          |
+ us3   |7            |u3 soft breaking parameter
+ ds3   |9            |d3 soft breaking parameter
+ wSu1  |57           |width of u-squark 1
+ wSu2  |48           |width of u-squark 2
+ wSd1  |57           |width of d-squark 1
+ wSd2  |47           |width of d-squark 2
+ wSc1  |57           |width of c-squark 1
+ wSc2  |48           |width of c-squark 2
+ wSs1  |57           |width of s-squark 1
+ wSs2  |47           |width of s-squark 2
+ wStop1|16           |width of t-squark 1
+ wStop2|40           |width of t-squark 2
+ wSbot1|32           |width of b-squark 1
+ wSbot2|42           |width of b-squark 2
+ Maux  |1            |mass of aux particles
+ tb    |1.5          |
+ MSG   |204.8        |mass of gluino
